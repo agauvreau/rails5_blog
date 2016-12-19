@@ -30,10 +30,10 @@
         </div> 
       </nav>
       
-    </header>
-    <div class="container">
+    </header> <!-- Navbar section (copied from bootstrap website -->
+    <div class="container"> <!-- bootstrap container -->
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12"> <!-- flash message section -->
           <% flash.each do |key, message| %>
         <div class="text-center alert alert-<%= key =='notice'? 'success': 'danger' %>">
           <%= message %>  
@@ -44,6 +44,6 @@
           <%= yield %>
         </div>
       </div>
-    </div>
+    </div> <!-- bootstrap container -->
   </body>
 </html>
