@@ -9,6 +9,9 @@ gem 'sqlite3'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'sprockets'
+#user identification and management
+gem 'devise', '~> 4.2.0'
 # Use bootstrap for HMTL and CSS formating
 gem 'bootstrap-sass', '~>3.3.6'
 gem 'autoprefixer-rails', '~>6.3.7'
