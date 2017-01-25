@@ -3,4 +3,5 @@ class Article < ApplicationRecord
     validates :body, presence: true
     #orders the articles in reverse order of creation
     default_scope { order(created_at: :desc)}
+    belongs_to :user
 end
