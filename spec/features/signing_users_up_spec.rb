@@ -1,5 +1,8 @@
 require "rails_helper"
 RSpec.feature "Users signup" do 
+    before do
+        @john = User.create(email: "john@example.com", password: "password")
+    end
     scenario "with valid credentials" do
         visit "/"
         click_link "Sign up"

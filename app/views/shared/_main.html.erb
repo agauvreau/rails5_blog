@@ -1,14 +1,12 @@
-<div class="container"> <!-- bootstrap container -->
+<div class="container">
   <div class="row">
-    <div class="col-md-12"> <!-- flash message section -->
+    <div class="col-md-12">
       <% flash.each do |key, message| %>
-    <div class="text-center alert alert-<%= key  %>"<%= message %>>
-      <%= message %>  
-    </div>
-    
-    
+        <div class="text-center alert alert-<%= key == 'notice'? 'success': 'danger' %>">
+          <%= message %>
+        </div>
       <% end %>
       <%= yield %>
     </div>
   </div>
-</div> <!-- bootstrap container -->
+</div>
